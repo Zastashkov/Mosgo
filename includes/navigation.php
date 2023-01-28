@@ -13,27 +13,22 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-<!--                --><?php
-//
-//                    $query = "SELECT * FROM categories";
-//                    $selectAllCategoriesQuery = mysqli_query($connection, $query);
-//                    while ($row = mysqli_fetch_assoc($selectAllCategoriesQuery)) {
-//                        $cat_title = $row['cat_title'];
-//                        echo "<li><a href='map.php'>{$cat_title}</a></li>";
-//                    }
-//
-//                ?>
+                <?php
 
+                    $query = "SELECT * FROM categories";
+                    $selectAllCategoriesQuery = mysqli_query($connection, $query);
+                    while ($row = mysqli_fetch_assoc($selectAllCategoriesQuery)) {
+                        $cat_title = $row['cat_title'];
+                        echo "<li><a href='map.php'>{$cat_title}</a></li>";
+                    }
 
+                ?>
 
-                <li>
-                    <a href="index.php">Парки</a>
-                </li>
-                <li>
-                    <a href="index.php">Маршруты</a>
-                </li>
                 <li>
                     <a href="map.php">Карта</a>
+                </li>
+                <li>
+                    <a href="admin">Админ</a>
                 </li>
             </ul>
         </div>
